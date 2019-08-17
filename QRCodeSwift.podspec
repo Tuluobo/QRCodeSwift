@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'QRCodeSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QRCodeSwift.'
+  s.summary          = 'A swift QRCode scanning framework.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A Swifty QRCode framework of SGQRCode.
                        DESC
 
   s.homepage         = 'https://github.com/Tuluobo/QRCodeSwift'
@@ -17,5 +17,6 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
     'QRCodeSwift' => ['QRCodeSwift/Resources/*']
   }
-  
+  s.swift_versions = ['4.0', '4.2', '5.0']
+
 end
