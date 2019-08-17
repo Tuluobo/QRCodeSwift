@@ -10,6 +10,14 @@
 		D63EE1DE21FD603F008CA8DD /* QRCodeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63EE1D421FD603F008CA8DD /* QRCodeSwift.framework */; };
 		D63EE1E321FD6040008CA8DD /* QRCodeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63EE1E221FD6040008CA8DD /* QRCodeSwiftTests.swift */; };
 		D63EE1E521FD6040008CA8DD /* QRCodeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = D63EE1D721FD603F008CA8DD /* QRCodeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D63EE1F621FD60FE008CA8DD /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1F121FD60FB008CA8DD /* sound.caf */; };
+		D63EE1F721FD60FE008CA8DD /* QRCodeScanLineGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1F221FD60FC008CA8DD /* QRCodeScanLineGrid@2x.png */; };
+		D63EE1F821FD60FE008CA8DD /* QRCodeScanLineGrid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1F321FD60FD008CA8DD /* QRCodeScanLineGrid@3x.png */; };
+		D63EE1F921FD60FE008CA8DD /* QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1F421FD60FE008CA8DD /* QRCodeScanLine@2x.png */; };
+		D63EE1FA21FD60FE008CA8DD /* QRCodeScanLine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1F521FD60FE008CA8DD /* QRCodeScanLine@3x.png */; };
+		D63EE1FD21FD611A008CA8DD /* QRCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63EE1FB21FD611A008CA8DD /* QRCodeManager.swift */; };
+		D63EE1FE21FD611A008CA8DD /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63EE1FC21FD611A008CA8DD /* QRCodeView.swift */; };
+		D63EE20021FD6125008CA8DD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D63EE1FF21FD6125008CA8DD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		D63EE1DD21FD603F008CA8DD /* QRCodeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63EE1E221FD6040008CA8DD /* QRCodeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeSwiftTests.swift; sourceTree = "<group>"; };
 		D63EE1E421FD6040008CA8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63EE1F121FD60FB008CA8DD /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
+		D63EE1F221FD60FC008CA8DD /* QRCodeScanLineGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLineGrid@2x.png"; sourceTree = "<group>"; };
+		D63EE1F321FD60FD008CA8DD /* QRCodeScanLineGrid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLineGrid@3x.png"; sourceTree = "<group>"; };
+		D63EE1F421FD60FE008CA8DD /* QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
+		D63EE1F521FD60FE008CA8DD /* QRCodeScanLine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLine@3x.png"; sourceTree = "<group>"; };
+		D63EE1FB21FD611A008CA8DD /* QRCodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeManager.swift; sourceTree = "<group>"; };
+		D63EE1FC21FD611A008CA8DD /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		D63EE1FF21FD6125008CA8DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 		D63EE1CA21FD603F008CA8DD = {
 			isa = PBXGroup;
 			children = (
+				D63EE1FF21FD6125008CA8DD /* README.md */,
 				D63EE1D621FD603F008CA8DD /* QRCodeSwift */,
 				D63EE1E121FD603F008CA8DD /* QRCodeSwiftTests */,
 				D63EE1D521FD603F008CA8DD /* Products */,
@@ -72,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				D63EE1D721FD603F008CA8DD /* QRCodeSwift.h */,
-				D63EE1D821FD603F008CA8DD /* Info.plist */,
+				D63EE1EE21FD605D008CA8DD /* Classes */,
+				D63EE1F021FD60E7008CA8DD /* Resources */,
+				D63EE1EF21FD60D4008CA8DD /* Supporting Files */,
 			);
 			path = QRCodeSwift;
 			sourceTree = "<group>";
@@ -84,6 +103,35 @@
 				D63EE1E421FD6040008CA8DD /* Info.plist */,
 			);
 			path = QRCodeSwiftTests;
+			sourceTree = "<group>";
+		};
+		D63EE1EE21FD605D008CA8DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D63EE1FB21FD611A008CA8DD /* QRCodeManager.swift */,
+				D63EE1FC21FD611A008CA8DD /* QRCodeView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D63EE1EF21FD60D4008CA8DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D63EE1D821FD603F008CA8DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D63EE1F021FD60E7008CA8DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D63EE1F421FD60FE008CA8DD /* QRCodeScanLine@2x.png */,
+				D63EE1F521FD60FE008CA8DD /* QRCodeScanLine@3x.png */,
+				D63EE1F221FD60FC008CA8DD /* QRCodeScanLineGrid@2x.png */,
+				D63EE1F321FD60FD008CA8DD /* QRCodeScanLineGrid@3x.png */,
+				D63EE1F121FD60FB008CA8DD /* sound.caf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +196,7 @@
 				TargetAttributes = {
 					D63EE1D321FD603F008CA8DD = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D63EE1DC21FD603F008CA8DD = {
 						CreatedOnToolsVersion = 10.1;
@@ -177,6 +226,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63EE20021FD6125008CA8DD /* README.md in Resources */,
+				D63EE1F821FD60FE008CA8DD /* QRCodeScanLineGrid@3x.png in Resources */,
+				D63EE1F921FD60FE008CA8DD /* QRCodeScanLine@2x.png in Resources */,
+				D63EE1FA21FD60FE008CA8DD /* QRCodeScanLine@3x.png in Resources */,
+				D63EE1F621FD60FE008CA8DD /* sound.caf in Resources */,
+				D63EE1F721FD60FE008CA8DD /* QRCodeScanLineGrid@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63EE1FE21FD611A008CA8DD /* QRCodeView.swift in Sources */,
+				D63EE1FD21FD611A008CA8DD /* QRCodeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +398,7 @@
 		D63EE1E921FD6040008CA8DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.QRCodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +425,7 @@
 		D63EE1EA21FD6040008CA8DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +451,7 @@
 		D63EE1EC21FD6040008CA8DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QRC4C5SWY;
 				INFOPLIST_FILE = QRCodeSwiftTests/Info.plist;
@@ -409,6 +470,7 @@
 		D63EE1ED21FD6040008CA8DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QRC4C5SWY;
 				INFOPLIST_FILE = QRCodeSwiftTests/Info.plist;
