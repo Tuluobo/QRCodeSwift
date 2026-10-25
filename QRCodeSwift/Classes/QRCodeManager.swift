@@ -140,6 +140,13 @@ open class QRCodeManager: NSObject {
             fileUrl = URL(fileURLWithPath: path)
         }
         
+        #if SWIFT_PACKAGE
+        if fileUrl == nil {
+            let resourceName = (name as NSString).lastPathComponent
+            fileUrl = Bundle.module.url(forResource: resourceName, withExtension: nil)
+        }
+        #endif
+
         if let _fileUrl = fileUrl {
             var soundID: SystemSoundID = 0
             _ = withUnsafeMutablePointer(to: &soundID) { (soundIDPointer) -> OSStatus in

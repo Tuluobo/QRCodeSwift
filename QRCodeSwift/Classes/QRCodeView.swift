@@ -40,6 +40,9 @@ open class QRCodeView: UIView {
     }()
     private lazy var scanningline: UIImageView = {
         let view = UIImageView()
+        #if SWIFT_PACKAGE
+        let assetBundle: Bundle? = .module
+        #else
         /// 静态库 url 的获取
         var assetBundle: Bundle?
         if let url = Bundle.main.url(forResource: "QRCodeSwift", withExtension: "bundle") {
@@ -47,6 +50,7 @@ open class QRCodeView: UIView {
         } else if let url = Bundle(for: type(of: self)).url(forResource: "QRCodeSwift", withExtension: "bundle") {
             assetBundle = Bundle(url: url)
         }
+        #endif
         if let bundle = assetBundle, let image = UIImage(named: self.scanImageName, in: bundle, compatibleWith: nil) {
             view.image = image
         } else {
